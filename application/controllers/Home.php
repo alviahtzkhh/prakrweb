@@ -46,7 +46,7 @@ class Home extends CI_Controller {
 		);
 
 		$this->M_Mahasiswa->insertDataMahasiswa($ArrInsert);
-		redirect(base_url(''));
+		redirect(base_url('home/dashboard'));
 
 	}
 
@@ -62,14 +62,14 @@ class Home extends CI_Controller {
 		);
 
 		$this->M_Mahasiswa->updateDataMahasiswa($nim, $ArrUpdate);
-		redirect(base_url(''));
+		redirect(base_url('home/dashboard'));
 
 	}
 
 	public function fungsiDelete($nim)
 	{
 		$this->M_Mahasiswa->deleteDataMahasiswa($nim);
-		redirect(base_url(''));
+		redirect(base_url('home/dashboard'));
 	}
 
 	public function logout() 
