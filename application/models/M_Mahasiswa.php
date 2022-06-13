@@ -29,6 +29,3 @@ class M_Mahasiswa extends CI_Model {
 	}
 
 }
-
-/* End of file M_Mahasiswa.php */
-/* Location: ./application/models/M_Mahasiswa.php */
